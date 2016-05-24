@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title> Annie's Dry Cleaning </title>
+</head>
+<body>
+	<h1> Welcome to Annie's Dry Cleaning </h1>
+	<div class="left">
+		<p> New dropoff </p>
+		<form action="drycleaning.php" method="POST">
+			Name: <input type="text" name="client" required> <br> <br>
+			Phone Number: <input type="text" name="phone" required> <br> <br>
+			Clothing: <select>
+				<option value="pants"> Pants </option>
+				<option value="suit"> Suit </option>
+				<option value="dress"> Dress </option>
+			</select> <br> <br>
+			Email: <input type="text" name="email"> <br> <br>
+			<input type="Submit" value="submit">
+		</form>
+	</div>
+	<div class="right">
+		<p> Picking Up Order? </p>
+		<form action="cleancheck.php" method="POST">
+			Name: <input type="text" name="client"> <br> <br>
+			Order Number: <input type="text" name="orderid" required> <br> <br>
+			<input type="submit" value="Submit">
+		</form>
+</body>
+</html>
